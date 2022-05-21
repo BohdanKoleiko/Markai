@@ -1,0 +1,619 @@
+*
+   margin: 0
+   padding: 0
+   box-sizing: border-box
+   font-family: 'Poppins', sans-serif
+
+@mixin gradient
+   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+   //background-clip: text
+   -webkit-background-clip: text
+   -webkit-text-fill-color: transparent
+
+.button
+   position: relative
+   height: 72px
+   width: 293px
+   border-radius: 50px
+   a
+      display: block
+      font-weight: 700
+      font-size: 27.1328px
+      line-height: 41px
+      padding: 16px 58px 15px 57px
+      border-radius: 50px
+
+.box-gradient
+   background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+   &__background-color
+      background-color: rgb(15, 11, 48)
+   &__bg-gradient
+      background: linear-gradient(90deg, rgba(0, 240, 255, 0.21) 0%, rgba(255, 0, 123, 0.045) 70%)  
+   
+.container
+   max-width: 1391px
+   margin: 0 auto
+
+html, body
+   height: 100%
+   line-height: 1
+
+body
+   background-color: #0F0B30
+   color: #fff
+   a
+      &:link
+         text-decoration: none
+         color: #fff
+      &:visited
+         color: #fff
+      &:hover
+         @include gradient
+         transition: linear, 0.3s
+         -webkit-transition: linear, 0.3s
+         -o-transition: 0.3s linear
+         -moz-transition: 0.3s linear
+         -ms-transition: 0.3s linear
+         
+
+
+header
+   margin: 26px 91px 0 91px
+   display: flex
+   flex-wrap: wrap
+   justify-content: space-between
+   align-items: center
+   min-height: 46px
+   #header__brand-name
+      font-weight: 700
+      font-size: 30.6849px
+      line-height: 46px
+   #header__list
+      display: flex
+      justify-content: space-between
+      flex-flow: row wrap
+
+      list-style-type: none
+
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+      li
+         &:nth-child(1n+2)
+            margin-left: 54px
+
+   #form
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 212px
+      font-weight: 700
+      font-size: 20px
+      line-height: 30px
+      &__button
+         position: relative
+         background: url(../images/buttons/1.svg) center center / contain no-repeat
+         height: 42px
+         width: 130px
+         a
+            display: block
+      &__sign-up
+         position: absolute
+         padding: 6px 22px
+         border-radius: 50px
+
+main
+   //background: url(../images/header_background.png) top center/cover no-repeat
+
+   #main-header
+      text-align: center
+      margin-top: 145px
+      &__wrapper
+         max-width: 880px
+         margin: 0 auto
+      &__title
+         font-weight: 400
+         font-size: 45px
+         line-height: 68px
+
+         width: 100%
+      &__sub-title
+         max-width: 100%
+
+         font-weight: 700
+         font-size: 98px
+         line-height: 147px
+         //56%
+
+         @include gradient
+         text-transform: uppercase
+      &__text
+         max-width: 601px
+
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+
+         margin: 0 auto
+      &__button
+         position: relative
+         height: 72px
+         margin: 0 auto
+         margin-top: 25px
+         img
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            -webkit-transform: translateX(-50%)
+      &__comming
+         display: block
+         position: absolute
+         padding: 16px 135px 16px 55px
+         font-weight: 700
+         font-size: 27.1328px
+         line-height: 41px
+         border-radius: 50px
+         left: 50%
+         transform: translateX(-50%)
+         &::after 
+            content: ""
+            position: absolute
+            top: 26px
+            right: 54px
+            height: 21px
+            width: 60px
+            background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
+      
+      .arrow
+         position: relative
+         height: 33px
+         margin-top: 126px
+         &::before
+            content: ""
+            position: absolute
+            width: 3px
+            height: 33px
+            background-color: #fff
+            transform: rotate(-55deg)
+            left: 48.4%
+         &::after
+            content: ""
+            position: absolute
+            width: 3px
+            height: 33px
+            background-color: #fff
+            transform: rotate(55deg)
+            right: 48.4%
+   
+   #main__AI
+      margin-top: 150px
+      height: 551.69px
+      background: url(../images/AI_robot.png) center left / contain no-repeat
+      &_text
+         font-weight: 700
+         font-size: 60px
+         line-height: 90px
+         @include gradient
+         max-width: 733px
+         float: right
+         margin-top: 141px
+   
+   #features
+      margin-top: 150px
+      &__header
+         font-weight: 700
+         font-size: 60px
+         line-height: 90px
+         @include gradient
+         text-align: left
+      &__txt
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+         max-width: 601px
+      &__box
+         margin-top: 36px
+   .box
+      display: flex
+      justify-content: stretch
+      flex-wrap: wrap
+      &__border
+         //position: relative
+         background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+         border-radius: 40px
+         max-width: 449px
+         //height: 374px
+         margin-top: 22px
+         padding: 2px
+         &:nth-child(n+2)
+            margin-left: 22px
+         &:nth-child(3n+4)
+            margin-left: 0
+            
+      &__item
+         //position: absolute
+         //top: 2px
+         //right: 2px
+         //bottom: 2px
+         //left: 2px
+         background-color: #1F1B42
+         border-radius: 40px
+      &__content-wrapper
+         //margin: 83px 57px 83px 50px
+         padding: 85px 53px 86px 50px
+      &__txt
+         font-weight: 700
+         font-size: 32px
+         line-height: 48px
+         max-width: 342px
+
+   #intro-partner
+      margin-top: 150px
+      text-align: center
+      &__describe
+         max-width: 655px
+
+         margin: 0 auto
+         h2
+            font-weight: 400
+            font-size: 32px
+            line-height: 48px
+         h3
+            font-weight: 700
+            font-size: 60px
+            line-height: 90px
+
+            @include gradient
+         p
+            font-weight: 400
+            font-size: 20px
+            line-height: 30px
+      &__player
+         position: relative
+         height: 806px
+         width: 1390px
+         background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+         border-radius: 51px
+         margin-top: 80px
+      .round-border
+         position: absolute
+         left: 50%
+         top: 50%
+         transform: translateX(-50%) translateY(-50%)
+         height: 798px
+         width: 1382px
+         border-radius: 50px
+         overflow: hidden
+         video
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translateX(-50%) translateY(-50%)
+            height: 810px
+            width: 1422px
+   
+   #custm-inface
+      margin-top: 150px
+      &__wrapper
+         //float: left
+         //max-width: 659px
+         border-left: 3px solid #fff
+         padding-left: 58px
+         margin-right: 52.6%
+      &__header
+         font-weight: 400
+         font-size: 32px
+         line-height: 40px
+         span
+            @include gradient
+            font-weight: 700
+            font-size: 60px
+            line-height: 80px
+      &__sub-header
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+      &__img-wrapper
+         float: right
+         //display: inline-block
+         max-width: 598.85px
+         max-height: 362.94px
+         //margin-left: 132px
+         //overflow: hidden
+      &__button
+         margin-top: 21px
+         background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat
+
+   #AI-website
+      margin-top: 150px
+      &__wrapper
+         float: right
+         max-width: 659px
+         border-left: 3px solid #fff
+         padding-left: 58px
+         margin-top: 81.31px
+      &__header
+         font-weight: 400
+         font-size: 32px
+         line-height: 40px
+         span
+            @include gradient
+            font-weight: 700
+            font-size: 60px
+            line-height: 80px
+      &__sub-header
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+      &__img-wrapper
+         //display: inline-block
+         max-width: 598.85px
+         max-height: 444.09px
+         //margin-right: 132px
+      &__button
+         margin-top: 21px
+         background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat
+
+   #big-sales
+      margin-top: 240.78px
+      &__border
+         border-radius: 41px
+         height: 626px
+         padding: 5px
+      &__bg-color
+         border-radius: 36px
+         height: 616px
+      &__bg-gradient
+         border-radius: 36px
+         height: 616px
+      &__txt-wrapper
+         padding: 91px 116px
+         margin-top: 91px
+         margin: 0 auto
+      &__header
+         font-weight: 700
+         font-size: 70px
+         line-height: 105px
+
+         @include gradient
+      &__sub-header
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+         width: 889px
+      &__button
+         margin-top: 43px
+         background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat    
+
+   #reviews
+      margin-top: 150px
+      &__header
+         width: 608px
+         margin: 0 auto
+         font-weight: 700
+         font-size: 60px
+         line-height: 75px
+         text-align: center
+         @include gradient
+      &__row
+         display: flex
+         justify-content: space-between
+         flex-wrap: wrap
+         margin-top: 17.77px
+      &__border
+         height: 305.77px
+         padding: 1.34px
+         border-radius: 27.3727px
+         margin-top: 27.23px
+      &__bg-color
+         height: 303.09px
+         width: 451.32px
+         border-radius: 26.0327px
+      &__bg-gradient
+         height: 303.09px
+         width: 451.32px
+         border-radius: 26.0327px
+         padding: 48.07px 45.4px 39.39px 45.4px
+      &__txt
+         font-weight: 400
+         font-size: 16.0231px
+         line-height: 24px
+      &__customer
+         margin-top: 27.58px
+         display: flex
+         justify-content: flex-start
+         align-items: center
+         p
+            margin-left: 18.03px
+            font-weight: 400
+            font-size: 12.0173px
+            line-height: 18px
+            span
+               @include gradient
+               font-weight: 700
+               font-size: 21.3641px
+               line-height: 32px
+
+   #contact-form
+      margin-top: 150px
+      &__wrapper
+         margin: 0 133px
+      &__header
+         width: 337px
+         margin: 0 auto
+         text-align: center
+         font-weight: 700
+         font-size: 60px
+         line-height: 90px
+         @include gradient
+      &__sub-header
+         width: 601px
+         margin: 0 auto
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+         text-align: center
+   
+footer
+   height: 848px
+   background-color: rgba(255, 255, 255, 0.05)
+   margin-top: 150px
+#row
+   display: flex
+   justify-content: space-between
+#markai
+   width: 504px
+   margin-top: 211px
+   &__header
+      max-width: 304px
+      font-weight: 700
+      font-size: 84.038px
+      line-height: 126px
+      @include gradient
+   &__txt
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+   &__button
+      margin-top: 25px
+   &__border
+      width: 293px
+      height: 72px
+      border-radius: 50px
+      padding: 3px
+   &__bg-color
+      background-color: #0F0B30
+      border-radius: 47px
+      width: 287px
+      height: 66px
+   &__button-txt
+      background-color: rgba(255, 255, 255, 0.05)
+      width: 287px
+      height: 66px
+      a
+         padding: 12.5px 55px 12.5px 55px
+         &::after 
+            content: ""
+            position: absolute
+            top: 22.5px
+            right: 55px
+            height: 21px
+            width: 60px
+            background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
+   &__social
+      margin-top: 34px
+      a:nth-child(1n+2)
+         margin-left: 21px
+#nav
+   display: flex
+   justify-content: space-between
+   align-content: flex-start
+   align-items: flex-start
+   flex-wrap: wrap
+   width: 412px
+   margin-top: 192px
+   &__list-item
+      width: 185px
+      list-style: none
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+      &:nth-child(1n+3)
+         margin-top: 44px
+      li:first-child
+         font-weight: 700
+      li:nth-child(1n+2)
+         margin-top: 10px
+
+
+//-------------------------------------------------------
+//@media screen and (max-width: 1370px)
+//   header
+//      justify-content: center
+   
+//   main
+//      #features
+//         &__header
+//            margin: 0 auto
+//            text-align: center
+//         &__txt
+//            margin: 0 auto
+//            text-align: center
+//      .box
+//         display: flex
+//         flex-wrap: wrap
+//         justify-content: center
+//         &__border
+//            &:nth-child(n+2)
+//               margin-left: 0
+//            &:nth-child(2n+2)
+//               margin-left: 22px
+
+//      #intro-partner
+//         margin-top: 100px
+//         &__player
+//            height: 571px
+//            width: 1000px
+//            margin: 0 auto
+//            margin-top: 53px
+//         .round-border
+//            height: 563px
+//            width: 992px
+//            video
+//               height: 586px
+//               width: 1000px
+      
+
+//@media screen and (max-width: 769px)
+//   main
+//      #features
+//         &__header
+//            margin: 0 auto
+//            text-align: center
+//         &__txt
+//            margin: 0 auto
+//            text-align: center
+//      .box
+//         display: flex
+//         flex-wrap: wrap
+//         justify-content: center
+//         &__border
+//            &:nth-child(n+2)
+//               margin-left: 0
+//            &:nth-child(2n+2)
+//               margin-left: 0
+
+//@media screen and (max-width: 414px)
+//   header
+//      #header__list
+//         li
+//            &:nth-child(n+2)
+//               margin-left: 0
+//            &:last-child
+//               margin: 0 auto
+//   main
+//      #main-header
+//         margin-top: 55px
+//         &__title
+//            font-size: 25.2px
+//            line-height: 38px
+//         &__sub-title
+//            font-size: 55px
+//            line-height: 82.32px
+//         &__text
+//            font-size: 11.2px
+//            line-height: 
+   
+//      #intro-partner
+//         margin-top: 100px
+//         &__player
+//            max-height: 215px
+//            max-width: 366px
+//            margin: 0 auto
+//            margin-top: 53px
+//         .round-border
+//            max-height: 210px
+//            max-width: 360px
+//            video
+//               max-height: 213px
+//               max-width: 363px
