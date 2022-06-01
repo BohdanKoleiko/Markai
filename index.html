@@ -161,11 +161,8 @@
                   </div>
                </div>
             </section>
-            <!--Блок reviews-->
             <section id="reviews">
-               <!--Елемент "header" блока header-->
                <h2 id="reviews__header">Our Customer's Reviews</h2>
-               <!--Елемент "row" блока "header" і блок "box-gradient"-->
                <div id="reviews__row">
                   <div id="reviews__border" class="box-gradient">
                      <div id="reviews__bg-color" class="box-gradient__background-color">
@@ -263,7 +260,20 @@
                <div id="contact-form__wrapper">
                   <h2 id="contact-form__header">Contact us</h2>
                   <h3 id="contact-form__sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus odio tempor rutrum...</h3>
-                  <form action="post" id="form"></form>
+                  <form action="#" method="post">
+                     <p class="personal-data">
+                        <input type="text" name="firstname" placeholder="Your Name">
+                     </p>
+                     <p class="personal-data">
+                        <input type="email" name="email" placeholder="Your Email Address">
+                     </p>
+                     <p class="feedback">
+                        <textarea name="comments" cols="30" rows="10" placeholder="Your Messages..."></textarea>
+                     </p>
+                     <p class="button">
+                        <input type="submit" value="Submit">
+                     </p>
+                  </form>
                </div>
             </section>
          </div>
