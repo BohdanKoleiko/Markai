@@ -1,4 +1,4 @@
-/* line 1, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 1, ../../Markai/sass/style.sass */
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +6,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* line 7, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 7, ../../Markai/sass/style.sass */
 html, body {
   height: 100%;
   line-height: 1;
   font-size: 15px;
 }
 
-/* line 18, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 18, ../../Markai/sass/style.sass */
 .button {
   position: relative;
   height: 72px;
@@ -21,7 +21,7 @@ html, body {
   border-radius: 50px;
 }
 
-/* line 23, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 23, ../../Markai/sass/style.sass */
 .button a {
   display: block;
   font-weight: 700;
@@ -31,45 +31,45 @@ html, body {
   border-radius: 50px;
 }
 
-/* line 31, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 31, ../../Markai/sass/style.sass */
 .box-gradient {
   background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
 }
 
-/* line 33, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 33, ../../Markai/sass/style.sass */
 .box-gradient__background-color {
   background-color: #0f0b30;
 }
 
-/* line 35, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 35, ../../Markai/sass/style.sass */
 .box-gradient__bg-gradient {
   background: linear-gradient(90deg, rgba(0, 240, 255, 0.21) 0%, rgba(255, 0, 123, 0.045) 70%);
 }
 
-/* line 38, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 38, ../../Markai/sass/style.sass */
 .container {
   max-width: 1391px;
   margin: 0 auto;
 }
 
-/* line 42, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 42, ../../Markai/sass/style.sass */
 body {
   background: #0b1030 url(../images/test.jpg) top center/100% no-repeat;
   color: #fff;
 }
 
-/* line 47, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 47, ../../Markai/sass/style.sass */
 body a:link {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 50, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 50, ../../Markai/sass/style.sass */
 body a:visited {
   color: #fff;
 }
 
-/* line 52, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 52, ../../Markai/sass/style.sass */
 body a:hover {
   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
   background-clip: text;
@@ -82,7 +82,7 @@ body a:hover {
   -ms-transition: 0.3s linear;
 }
 
-/* line 62, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 62, ../../Markai/sass/style.sass */
 header {
   margin: 26px 91px 0 91px;
   display: flex;
@@ -92,14 +92,14 @@ header {
   min-height: 46px;
 }
 
-/* line 69, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 69, ../../Markai/sass/style.sass */
 header #header__brand-name {
   font-weight: 700;
   font-size: 31px;
   line-height: 46px;
 }
 
-/* line 73, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 73, ../../Markai/sass/style.sass */
 header #header__list {
   display: flex;
   justify-content: space-between;
@@ -111,12 +111,12 @@ header #header__list {
   margin: 0 33px;
 }
 
-/* line 83, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 83, ../../Markai/sass/style.sass */
 header #header__list li:nth-child(1n+2) {
   margin-left: 54px;
 }
 
-/* line 86, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 86, ../../Markai/sass/style.sass */
 header #form {
   display: flex;
   justify-content: space-between;
@@ -127,7 +127,7 @@ header #form {
   line-height: 30px;
 }
 
-/* line 94, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 94, ../../Markai/sass/style.sass */
 header #form__button {
   position: relative;
   background: url(../images/buttons/1.svg) center center/contain no-repeat;
@@ -135,35 +135,35 @@ header #form__button {
   width: 130px;
 }
 
-/* line 99, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 99, ../../Markai/sass/style.sass */
 header #form__button a {
   display: block;
 }
 
-/* line 101, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 101, ../../Markai/sass/style.sass */
 header #form__sign-up {
   position: absolute;
   padding: 6px 22px;
   border-radius: 50px;
 }
 
-/* line 106, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 106, ../../Markai/sass/style.sass */
 main {
   margin-top: 145px;
 }
 
-/* line 109, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 109, ../../Markai/sass/style.sass */
 #main-header {
   text-align: center;
 }
 
-/* line 111, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 111, ../../Markai/sass/style.sass */
 #main-header__wrapper {
   max-width: 880px;
   margin: 0 auto;
 }
 
-/* line 114, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 114, ../../Markai/sass/style.sass */
 #main-header__title {
   font-weight: 400;
   font-size: 45px;
@@ -172,7 +172,7 @@ main {
   margin: 0;
 }
 
-/* line 120, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 120, ../../Markai/sass/style.sass */
 #main-header__sub-title {
   max-width: 100%;
   font-weight: 700;
@@ -185,7 +185,7 @@ main {
   text-transform: uppercase;
 }
 
-/* line 128, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 128, ../../Markai/sass/style.sass */
 #main-header__text {
   max-width: 601px;
   font-weight: 400;
@@ -194,7 +194,7 @@ main {
   margin: 0 auto;
 }
 
-/* line 136, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 136, ../../Markai/sass/style.sass */
 #main-header__button {
   position: relative;
   height: 72px;
@@ -203,7 +203,7 @@ main {
   margin-top: 25px;
 }
 
-/* line 142, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 142, ../../Markai/sass/style.sass */
 #main-header__button img {
   position: absolute;
   top: 0;
@@ -211,7 +211,7 @@ main {
   width: 100%;
 }
 
-/* line 147, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 147, ../../Markai/sass/style.sass */
 #main-header__comming {
   display: block;
   position: absolute;
@@ -224,7 +224,7 @@ main {
   border-radius: 50px;
 }
 
-/* line 157, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 157, ../../Markai/sass/style.sass */
 #main-header__comming::after {
   content: "";
   position: absolute;
@@ -235,7 +235,7 @@ main {
   background: url(../images/buttons/Arrow.svg) center center/contain no-repeat;
 }
 
-/* line 166, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 166, ../../Markai/sass/style.sass */
 .arrow {
   position: relative;
   height: 33px;
@@ -244,7 +244,7 @@ main {
   margin-top: 126px;
 }
 
-/* line 172, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 172, ../../Markai/sass/style.sass */
 .arrow::before {
   content: "";
   position: absolute;
@@ -255,7 +255,7 @@ main {
   left: 25%;
 }
 
-/* line 180, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 180, ../../Markai/sass/style.sass */
 .arrow::after {
   content: "";
   position: absolute;
@@ -266,14 +266,14 @@ main {
   right: 25%;
 }
 
-/* line 189, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 189, ../../Markai/sass/style.sass */
 #main__AI {
   margin-top: 150px;
   height: 551.69px;
   background: url(../images/AI_robot.png) center left/contain no-repeat;
 }
 
-/* line 193, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 193, ../../Markai/sass/style.sass */
 #main__AI_text {
   font-weight: 700;
   font-size: 60px;
@@ -287,12 +287,12 @@ main {
   margin-top: 141px;
 }
 
-/* line 202, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 202, ../../Markai/sass/style.sass */
 #features {
   margin-top: 150px;
 }
 
-/* line 204, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 204, ../../Markai/sass/style.sass */
 #features__header {
   font-weight: 700;
   font-size: 60px;
@@ -304,7 +304,7 @@ main {
   text-align: left;
 }
 
-/* line 210, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 210, ../../Markai/sass/style.sass */
 #features__txt {
   font-weight: 400;
   font-size: 20px;
@@ -312,19 +312,19 @@ main {
   max-width: 601px;
 }
 
-/* line 215, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 215, ../../Markai/sass/style.sass */
 #features__box {
   margin-top: 36px;
 }
 
-/* line 218, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 218, ../../Markai/sass/style.sass */
 .box {
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
 }
 
-/* line 222, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 222, ../../Markai/sass/style.sass */
 .box__border {
   background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
   border-radius: 40px;
@@ -333,28 +333,28 @@ main {
   padding: 2px;
 }
 
-/* line 228, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 228, ../../Markai/sass/style.sass */
 .box__border:nth-child(n+2) {
   margin-left: 22px;
 }
 
-/* line 230, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 230, ../../Markai/sass/style.sass */
 .box__border:nth-child(3n+4) {
   margin-left: 0;
 }
 
-/* line 233, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 233, ../../Markai/sass/style.sass */
 .box__item {
   background-color: #1F1B42;
   border-radius: 40px;
 }
 
-/* line 236, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 236, ../../Markai/sass/style.sass */
 .box__content-wrapper {
   padding: 85px 53px 86px 50px;
 }
 
-/* line 238, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 238, ../../Markai/sass/style.sass */
 .box__txt {
   font-weight: 700;
   font-size: 32px;
@@ -362,26 +362,26 @@ main {
   max-width: 342px;
 }
 
-/* line 244, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 244, ../../Markai/sass/style.sass */
 #intro-partner {
   margin-top: 150px;
   text-align: center;
 }
 
-/* line 247, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 247, ../../Markai/sass/style.sass */
 #intro-partner__describe {
   max-width: 655px;
   margin: 0 auto;
 }
 
-/* line 251, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 251, ../../Markai/sass/style.sass */
 #intro-partner__describe h2 {
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
 }
 
-/* line 255, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 255, ../../Markai/sass/style.sass */
 #intro-partner__describe h3 {
   font-weight: 700;
   font-size: 60px;
@@ -392,14 +392,14 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/* line 261, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 261, ../../Markai/sass/style.sass */
 #intro-partner__describe p {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 265, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 265, ../../Markai/sass/style.sass */
 #intro-partner__player {
   position: relative;
   height: 806px;
@@ -410,7 +410,7 @@ main {
   padding: 4px;
 }
 
-/* line 274, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 274, ../../Markai/sass/style.sass */
 .round-border {
   position: absolute;
   width: 99.3%;
@@ -423,7 +423,7 @@ main {
   overflow: hidden;
 }
 
-/* line 284, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 284, ../../Markai/sass/style.sass */
 .round-border video {
   position: absolute;
   width: 100%;
@@ -434,26 +434,26 @@ main {
   object-fit: cover;
 }
 
-/* line 293, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 293, ../../Markai/sass/style.sass */
 #custm-inface {
   margin-top: 150px;
 }
 
-/* line 295, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 295, ../../Markai/sass/style.sass */
 #custm-inface__wrapper {
   border-left: 3px solid #fff;
   padding-left: 58px;
   margin-right: 52.6%;
 }
 
-/* line 299, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 299, ../../Markai/sass/style.sass */
 #custm-inface__header {
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 303, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 303, ../../Markai/sass/style.sass */
 #custm-inface__header span {
   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
   background-clip: text;
@@ -464,47 +464,47 @@ main {
   line-height: 80px;
 }
 
-/* line 308, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 308, ../../Markai/sass/style.sass */
 #custm-inface__sub-header {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 312, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 312, ../../Markai/sass/style.sass */
 #custm-inface__img-wrapper {
   float: right;
   max-width: 598.85px;
   max-height: 362.94px;
 }
 
-/* line 316, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 316, ../../Markai/sass/style.sass */
 #custm-inface__button {
   margin-top: 21px;
   background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat;
 }
 
-/* line 320, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 320, ../../Markai/sass/style.sass */
 #AI-website {
   margin-top: 140px;
   padding-top: 81px;
 }
 
-/* line 323, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 323, ../../Markai/sass/style.sass */
 #AI-website__wrapper {
   border-left: 3px solid #fff;
   padding-left: 58px;
   margin-left: 52.6%;
 }
 
-/* line 327, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 327, ../../Markai/sass/style.sass */
 #AI-website__header {
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
 }
 
-/* line 331, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 331, ../../Markai/sass/style.sass */
 #AI-website__header span {
   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
   background-clip: text;
@@ -515,14 +515,14 @@ main {
   line-height: 80px;
 }
 
-/* line 336, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 336, ../../Markai/sass/style.sass */
 #AI-website__sub-header {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 340, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 340, ../../Markai/sass/style.sass */
 #AI-website__img-wrapper {
   float: left;
   width: 598.85px;
@@ -530,31 +530,31 @@ main {
   overflow: hidden;
 }
 
-/* line 345, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 345, ../../Markai/sass/style.sass */
 #AI-website__img-item {
   position: relative;
   height: 100%;
 }
 
-/* line 348, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 348, ../../Markai/sass/style.sass */
 #AI-website__img-item img {
   position: absolute;
   top: -80px;
   left: 0;
 }
 
-/* line 352, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 352, ../../Markai/sass/style.sass */
 #AI-website__button {
   margin-top: 21px;
   background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat;
 }
 
-/* line 356, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 356, ../../Markai/sass/style.sass */
 #big-sales {
   margin-top: 240.78px;
 }
 
-/* line 358, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 358, ../../Markai/sass/style.sass */
 #big-sales__border {
   position: relative;
   border-radius: 41px;
@@ -563,13 +563,13 @@ main {
   overflow: hidden;
 }
 
-/* line 364, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 364, ../../Markai/sass/style.sass */
 #big-sales__bg-color {
   border-radius: 36px;
   padding-top: 616px;
 }
 
-/* line 367, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 367, ../../Markai/sass/style.sass */
 #big-sales__bg-gradient {
   position: absolute;
   top: 0;
@@ -579,7 +579,7 @@ main {
   border-radius: 36px;
 }
 
-/* line 374, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 374, ../../Markai/sass/style.sass */
 #big-sales__txt-wrapper {
   position: absolute;
   top: 91px;
@@ -588,7 +588,7 @@ main {
   margin: 0 auto;
 }
 
-/* line 380, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 380, ../../Markai/sass/style.sass */
 #big-sales__header {
   font-weight: 700;
   font-size: 70px;
@@ -599,7 +599,7 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/* line 385, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 385, ../../Markai/sass/style.sass */
 #big-sales__sub-header {
   font-weight: 400;
   font-size: 20px;
@@ -607,18 +607,18 @@ main {
   max-width: 889px;
 }
 
-/* line 390, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 390, ../../Markai/sass/style.sass */
 #big-sales__button {
   margin-top: 43px;
   background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat;
 }
 
-/* line 394, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 394, ../../Markai/sass/style.sass */
 #reviews {
   margin-top: 150px;
 }
 
-/* line 396, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 396, ../../Markai/sass/style.sass */
 #reviews__header {
   max-width: 608px;
   margin: 0 auto;
@@ -632,7 +632,7 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/* line 404, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 404, ../../Markai/sass/style.sass */
 #reviews__row {
   display: flex;
   justify-content: space-between;
@@ -640,7 +640,7 @@ main {
   margin-top: 17.77px;
 }
 
-/* line 409, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 409, ../../Markai/sass/style.sass */
 #reviews__border {
   height: 305.77px;
   padding: 1.34px;
@@ -648,14 +648,14 @@ main {
   margin-top: 27.23px;
 }
 
-/* line 414, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 414, ../../Markai/sass/style.sass */
 #reviews__bg-color {
   height: 303.09px;
   width: 451.32px;
   border-radius: 26.0327px;
 }
 
-/* line 418, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 418, ../../Markai/sass/style.sass */
 #reviews__bg-gradient {
   height: 303.09px;
   width: 451.32px;
@@ -663,14 +663,14 @@ main {
   padding: 48.07px 45.4px 39.39px 45.4px;
 }
 
-/* line 423, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 423, ../../Markai/sass/style.sass */
 #reviews__txt {
   font-weight: 400;
   font-size: 16.0231px;
   line-height: 24px;
 }
 
-/* line 427, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 427, ../../Markai/sass/style.sass */
 #reviews__customer {
   margin-top: 27.58px;
   display: flex;
@@ -678,7 +678,7 @@ main {
   align-items: center;
 }
 
-/* line 432, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 432, ../../Markai/sass/style.sass */
 #reviews__customer p {
   margin-left: 18.03px;
   font-weight: 400;
@@ -686,7 +686,7 @@ main {
   line-height: 18px;
 }
 
-/* line 437, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 437, ../../Markai/sass/style.sass */
 #reviews__customer p span {
   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
   background-clip: text;
@@ -697,18 +697,18 @@ main {
   line-height: 32px;
 }
 
-/* line 443, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 443, ../../Markai/sass/style.sass */
 #contact-form {
   margin-top: 150px;
 }
 
-/* line 445, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 445, ../../Markai/sass/style.sass */
 #contact-form__wrapper {
   width: 80.7%;
   margin: 0 auto;
 }
 
-/* line 448, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 448, ../../Markai/sass/style.sass */
 #contact-form__header {
   max-width: 337px;
   margin: 0 auto;
@@ -722,7 +722,7 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/* line 456, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 456, ../../Markai/sass/style.sass */
 #contact-form__sub-header {
   max-width: 601px;
   margin: 0 auto;
@@ -732,12 +732,12 @@ main {
   text-align: center;
 }
 
-/* line 463, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 463, ../../Markai/sass/style.sass */
 #contact-form form {
   margin-top: 55px;
 }
 
-/* line 466, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 466, ../../Markai/sass/style.sass */
 #contact-form .personal-data {
   display: inline-block;
   border-radius: 50px;
@@ -748,7 +748,7 @@ main {
   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
 }
 
-/* line 474, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 474, ../../Markai/sass/style.sass */
 #contact-form .personal-data input {
   width: 100%;
   height: 100%;
@@ -760,12 +760,12 @@ main {
   color: #fff;
 }
 
-/* line 483, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 483, ../../Markai/sass/style.sass */
 #contact-form .personal-data:first-child {
   margin-right: 40px;
 }
 
-/* line 486, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 486, ../../Markai/sass/style.sass */
 #contact-form .feedback {
   width: 100%;
   height: 232px;
@@ -777,7 +777,7 @@ main {
   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
 }
 
-/* line 495, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 495, ../../Markai/sass/style.sass */
 #contact-form .feedback textarea {
   width: 100%;
   height: 100%;
@@ -789,7 +789,7 @@ main {
   color: #fff;
 }
 
-/* line 505, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 505, ../../Markai/sass/style.sass */
 #contact-form .button {
   width: 293px;
   height: 72px;
@@ -799,7 +799,7 @@ main {
   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%);
 }
 
-/* line 512, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 512, ../../Markai/sass/style.sass */
 #contact-form .button input {
   width: 100%;
   height: 100%;
@@ -811,26 +811,26 @@ main {
   font-size: 27px;
 }
 
-/* line 523, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 523, ../../Markai/sass/style.sass */
 footer {
   height: 848px;
   background-color: rgba(255, 255, 255, 0.05);
   margin-top: 150px;
 }
 
-/* line 527, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 527, ../../Markai/sass/style.sass */
 #row {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 530, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 530, ../../Markai/sass/style.sass */
 #markai {
   width: 504px;
   margin-top: 211px;
 }
 
-/* line 533, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 533, ../../Markai/sass/style.sass */
 #markai__header {
   max-width: 304px;
   font-weight: 700;
@@ -842,19 +842,19 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
-/* line 539, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 539, ../../Markai/sass/style.sass */
 #markai__txt {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 543, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 543, ../../Markai/sass/style.sass */
 #markai__button {
   margin-top: 25px;
 }
 
-/* line 545, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 545, ../../Markai/sass/style.sass */
 #markai__border {
   width: 293px;
   height: 72px;
@@ -862,7 +862,7 @@ footer {
   padding: 3px;
 }
 
-/* line 550, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 550, ../../Markai/sass/style.sass */
 #markai__bg-color {
   background-color: #0F0B30;
   border-radius: 47px;
@@ -870,19 +870,19 @@ footer {
   height: 66px;
 }
 
-/* line 555, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 555, ../../Markai/sass/style.sass */
 #markai__button-txt {
   background-color: rgba(255, 255, 255, 0.05);
   width: 287px;
   height: 66px;
 }
 
-/* line 559, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 559, ../../Markai/sass/style.sass */
 #markai__button-txt a {
   padding: 12.5px 55px 12.5px 55px;
 }
 
-/* line 561, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 561, ../../Markai/sass/style.sass */
 #markai__button-txt a::after {
   content: "";
   position: absolute;
@@ -893,17 +893,17 @@ footer {
   background: url(../images/buttons/Arrow.svg) center center/contain no-repeat;
 }
 
-/* line 569, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 569, ../../Markai/sass/style.sass */
 #markai__social {
   margin-top: 34px;
 }
 
-/* line 571, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 571, ../../Markai/sass/style.sass */
 #markai__social a:nth-child(1n+2) {
   margin-left: 21px;
 }
 
-/* line 573, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 573, ../../Markai/sass/style.sass */
 #nav {
   display: flex;
   justify-content: space-between;
@@ -914,7 +914,7 @@ footer {
   margin-top: 192px;
 }
 
-/* line 581, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 581, ../../Markai/sass/style.sass */
 #nav__list-item {
   width: 185px;
   list-style: none;
@@ -923,17 +923,17 @@ footer {
   line-height: 30px;
 }
 
-/* line 587, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 587, ../../Markai/sass/style.sass */
 #nav__list-item:nth-child(1n+3) {
   margin-top: 44px;
 }
 
-/* line 589, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 589, ../../Markai/sass/style.sass */
 #nav__list-item li:first-child {
   font-weight: 700;
 }
 
-/* line 591, ../../../../../Users/bogdankoleiko/Documents/Dev_projects/my-self projects/Markai/sass/style.sass */
+/* line 591, ../../Markai/sass/style.sass */
 #nav__list-item li:nth-child(1n+2) {
   margin-top: 10px;
 }
