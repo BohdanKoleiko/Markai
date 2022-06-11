@@ -1,0 +1,568 @@
+.button
+   position: relative
+   height: 72px
+   width: 293px
+   border-radius: 50px
+   a
+      display: block
+      font-weight: 700
+      font-size: 27.1328px
+      line-height: 41px
+      padding: 16px 58px 15px 57px
+      border-radius: 50px
+
+.box-gradient
+   background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+   &__background-color
+      background-color: rgb(15, 11, 48)
+   &__bg-gradient
+      background: linear-gradient(90deg, rgba(0, 240, 255, 0.21) 0%, rgba(255, 0, 123, 0.045) 70%)  
+   
+.container
+   max-width: 1391px
+   margin: 0 auto
+
+body
+   background: #0b1030 url(../images/test.jpg) top center/100% no-repeat
+   color: #fff
+   a
+      &:link
+         text-decoration: none
+         color: #fff
+      &:visited
+         color: #fff
+      &:hover
+         @include gradient
+         transition: linear, 0.3s
+
+header
+   margin: 26px 91px 0 91px
+   display: flex
+   flex-wrap: wrap
+   justify-content: space-between
+   align-items: center
+   min-height: 46px
+   #header__brand-name
+      font-weight: 700
+      font-size: 31px
+      line-height: 46px
+   #header__list
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      list-style-type: none
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+      margin: 0 33px
+      li
+         &:nth-child(1n+2)
+            margin-left: 54px
+
+   #form
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 212px
+      font-weight: 700
+      font-size: 20px
+      line-height: 30px
+      &__button
+         position: relative
+         background: url(../images/buttons/1.svg) center center / contain no-repeat
+         height: 42px
+         width: 130px
+         a
+            display: block
+      &__sign-up
+         position: absolute
+         padding: 6px 22px
+         border-radius: 50px
+
+main
+   margin-top: 145px
+
+#main-header
+   text-align: center
+   &__wrapper
+      max-width: 880px
+      margin: 0 auto
+   &__title
+      font-weight: 400
+      font-size: 45px
+      line-height: 68px
+      width: 100%
+      margin: 0
+   &__sub-title
+      max-width: 100%
+      font-weight: 700
+      font-size: 98px
+      line-height: 147px
+
+      @include gradient
+      text-transform: uppercase
+   &__text
+      max-width: 601px
+
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+
+      margin: 0 auto
+   &__button
+      position: relative
+      height: 72px
+      max-width: 293px
+      margin: 0 auto
+      margin-top: 25px
+      img
+         position: absolute
+         top: 0
+         right: 0
+         width: 100%
+   &__comming
+      display: block
+      position: absolute
+      top: 0
+      right: 0
+      padding: 16px 135px 16px 55px
+      font-weight: 700
+      font-size: 27px
+      line-height: 41px
+      border-radius: 50px
+      &::after 
+         content: ""
+         position: absolute
+         top: 26px
+         right: 54px
+         height: 21px
+         width: 60px
+         background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
+   
+.arrow
+   position: relative
+   height: 33px
+   width: 56px
+   margin: 0 auto
+   margin-top: 126px
+   &::before
+      content: ""
+      position: absolute
+      width: 3px
+      height: 33px
+      background-color: #fff
+      transform: rotate(-55deg)
+      left: 25%
+   &::after
+      content: ""
+      position: absolute
+      width: 3px
+      height: 33px
+      background-color: #fff
+      transform: rotate(55deg)
+      right: 25%
+   
+#main__AI
+   margin-top: 150px
+   height: 551.69px
+   background: url(../images/AI_robot.png) center left / contain no-repeat
+   &_text
+      font-weight: 700
+      font-size: 60px
+      line-height: 90px
+      @include gradient
+      max-width: 733px
+      float: right
+      margin-top: 141px
+   
+#features
+   margin-top: 150px
+   &__header
+      font-weight: 700
+      font-size: 60px
+      line-height: 90px
+      @include gradient
+      text-align: left
+   &__txt
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+      max-width: 601px
+   &__box
+      margin-top: 36px
+
+.box
+   display: flex
+   justify-content: stretch
+   flex-wrap: wrap
+   &__border
+      background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+      border-radius: 40px
+      max-width: 449px
+      margin-top: 22px
+      padding: 2px
+      &:nth-child(n+2)
+         margin-left: 22px
+      &:nth-child(3n+4)
+         margin-left: 0
+         
+   &__item
+      background-color: #1F1B42
+      border-radius: 40px
+   &__content-wrapper
+      padding: 85px 53px 86px 50px
+   &__txt
+      font-weight: 700
+      font-size: 32px
+      line-height: 48px
+      max-width: 342px
+
+#intro-partner
+   margin-top: 150px
+   text-align: center
+   &__describe
+      max-width: 655px
+
+      margin: 0 auto
+      h2
+         font-weight: 400
+         font-size: 32px
+         line-height: 48px
+      h3
+         font-weight: 700
+         font-size: 60px
+         line-height: 90px
+
+         @include gradient
+      p
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+   &__player
+      position: relative
+      height: 806px
+      width: 100%
+      background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+      border-radius: 51px
+      margin-top: 80px
+      padding: 4px
+
+.round-border
+   position: absolute
+   width: 99.3%
+   height: 99%
+   background: #0F0B30
+   border-radius: 50px
+   left: 50%
+   top: 50%
+   transform: translateX(-50%) translateY(-50%)
+   overflow: hidden
+   video
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 50%
+      top: 50%
+      transform: translateX(-50%) translateY(-50%)
+      object-fit: cover
+   
+#custm-inface
+   margin-top: 150px
+   &__wrapper
+      border-left: 3px solid #fff
+      padding-left: 58px
+      margin-right: 52.6%
+   &__header
+      font-weight: 400
+      font-size: 32px
+      line-height: 40px
+      span
+         @include gradient
+         font-weight: 700
+         font-size: 60px
+         line-height: 80px
+   &__sub-header
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+   &__img-wrapper
+      float: right
+      max-width: 598.85px
+      max-height: 362.94px
+   &__button
+      margin-top: 21px
+      background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat
+
+#AI-website
+   margin-top: 140px
+   padding-top: 81px
+   &__wrapper
+      border-left: 3px solid #fff
+      padding-left: 58px
+      margin-left: 52.6%
+   &__header
+      font-weight: 400
+      font-size: 32px
+      line-height: 40px
+      span
+         @include gradient
+         font-weight: 700
+         font-size: 60px
+         line-height: 80px
+   &__sub-header
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+   &__img-wrapper
+      float: left
+      width: 598.85px
+      height: 363px
+      overflow: hidden
+   &__img-item
+      position: relative
+      height: 100%
+      img
+         position: absolute
+         top: -80px
+         left: 0
+   &__button
+      margin-top: 21px
+      background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat
+
+#big-sales
+   margin-top: 240.78px
+   &__border
+      position: relative
+      border-radius: 41px
+      max-height: 626px
+      padding: 5px
+      overflow: hidden
+   &__bg-color
+      border-radius: 36px
+      padding-top: 616px
+   &__bg-gradient
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      border-radius: 36px
+   &__txt-wrapper
+      position: absolute
+      top: 91px
+      left: 116px
+      margin-top: 91px
+      margin: 0 auto
+   &__header
+      font-weight: 700
+      font-size: 70px
+      line-height: 105px
+      @include gradient
+   &__sub-header
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+      max-width: 889px
+   &__button
+      margin-top: 43px
+      background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat    
+
+#reviews
+   margin-top: 150px
+   &__header
+      max-width: 608px
+      margin: 0 auto
+      font-weight: 700
+      font-size: 60px
+      line-height: 75px
+      text-align: center
+      @include gradient
+   &__row
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-top: 17.77px
+   &__border
+      height: 305.77px
+      padding: 1.34px
+      border-radius: 27.3727px
+      margin-top: 27.23px
+   &__bg-color
+      height: 303.09px
+      width: 451.32px
+      border-radius: 26.0327px
+   &__bg-gradient
+      height: 303.09px
+      width: 451.32px
+      border-radius: 26.0327px
+      padding: 48.07px 45.4px 39.39px 45.4px
+   &__txt
+      font-weight: 400
+      font-size: 16.0231px
+      line-height: 24px
+   &__customer
+      margin-top: 27.58px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      p
+         margin-left: 18.03px
+         font-weight: 400
+         font-size: 12.0173px
+         line-height: 18px
+         span
+            @include gradient
+            font-weight: 700
+            font-size: 21.3641px
+            line-height: 32px
+
+#contact-form
+   margin-top: 150px
+   &__wrapper
+      width: 80.7%
+      margin: 0 auto
+   &__header
+      max-width: 337px
+      margin: 0 auto
+      text-align: center
+      font-weight: 700
+      font-size: 60px
+      line-height: 90px
+      @include gradient
+   &__sub-header
+      max-width: 601px
+      margin: 0 auto
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+      text-align: center
+   form
+      margin-top: 55px
+
+   .personal-data
+      display: inline-block
+      border-radius: 50px
+      width: 48%
+      height: 77px
+      overflow: hidden
+      padding: 3px
+      background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+      input
+         width: 100%
+         height: 100%
+         background-color: #0b1030
+         border: none
+         border-radius: 50px
+         padding-left: 44.7px
+         font-size: 17px
+         color: #fff
+      &:first-child
+         margin-right: 40px
+
+   .feedback
+      width: 100%
+      height: 232px
+      border-radius: 30px
+      overflow: hidden
+      margin: 0 auto
+      margin-top: 31px
+      padding: 3px
+      background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+      textarea
+         width: 100%
+         height: 100%
+         border: none
+         border-radius: 28px
+         padding: 27px 0 0 45px
+         background-color: #0b1030
+         font-size: 17px
+         color: #fff
+
+   .button
+      width: 293px
+      height: 72px
+      margin: 0 auto
+      margin-top: 42px
+      padding: 3px
+      background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+      input
+         width: 100%
+         height: 100%
+         border: none
+         border-radius: 50px
+         background-color: #0b1030
+         color: #fff
+         font-weight: 700
+         font-size: 27px
+   
+
+footer
+   height: 848px
+   background-color: rgba(255, 255, 255, 0.05)
+   margin-top: 150px
+#row
+   display: flex
+   justify-content: space-between
+#markai
+   width: 504px
+   margin-top: 211px
+   &__header
+      max-width: 304px
+      font-weight: 700
+      font-size: 84px
+      line-height: 126px
+      @include gradient
+   &__txt
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+   &__button
+      margin-top: 25px
+   &__border
+      width: 293px
+      height: 72px
+      border-radius: 50px
+      padding: 3px
+   &__bg-color
+      background-color: #0F0B30
+      border-radius: 47px
+      width: 287px
+      height: 66px
+   &__button-txt
+      background-color: rgba(255, 255, 255, 0.05)
+      width: 287px
+      height: 66px
+      a
+         padding: 12.5px 55px 12.5px 55px
+         &::after 
+            content: ""
+            position: absolute
+            top: 22.5px
+            right: 55px
+            height: 21px
+            width: 60px
+            background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
+   &__social
+      margin-top: 34px
+      a:nth-child(1n+2)
+         margin-left: 21px
+#nav
+   display: flex
+   justify-content: space-between
+   align-content: flex-start
+   align-items: flex-start
+   flex-wrap: wrap
+   width: 412px
+   margin-top: 192px
+   &__list-item
+      width: 185px
+      list-style: none
+      font-weight: 400
+      font-size: 20px
+      line-height: 30px
+      &:nth-child(1n+3)
+         margin-top: 44px
+      li:first-child
+         font-weight: 700
+      li:nth-child(1n+2)
+         margin-top: 10px
