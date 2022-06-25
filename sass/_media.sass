@@ -1,20 +1,6 @@
-@media screen and ( max-width: 1200px)
+@media screen and ( max-width: 1199px)
    .container
-      max-width: 960px
-      margin: 0 auto
-
-   .header
-      margin: 26px 16px 0 16px
-      &__menu
-         font-size: 16px
-         line-height: 26px
-   
-      .form
-         font-size: 18px
-         line-height: 28px
-         &__button-wrapper
-            height: 40px
-            width: 121px
+      max-width: 990px
       
    .main-AI
       background-size: 37%
@@ -27,6 +13,7 @@
    .box
       justify-content: space-between
       &__border
+         flex: 0 1 46.771%
          &:nth-child(n+2)
             margin-left: 0
    
@@ -73,30 +60,31 @@
          line-height: 100px
       &__sub-header
          max-width: 670px
-         //max-height: 120px
 
 @media screen and ( max-width: 1024px)
    .container
-      max-width: 720px
-      margin: 0 auto
+      max-width: 750px
    
    .header
-      margin: 26px 16px 0 16px
       &__nav
-         width: 460px
+         max-width: 500px
          margin: 0 22px
       &__menu
+         font-size: 16px
          li:nth-child(1n+2)
             margin-left: 10px
       
       .form
-         width: 179px
+         width: 190px
+
+         font-size: 18px
+         line-height: 28px
          &__login
             margin-right: 14px
          &__button-wrapper
             width: 116px
          &__button
-            padding: 6px 20px
+            padding: 5px 19px
    
    main
       margin-top: 110px
@@ -130,6 +118,8 @@
       &__border
          width: 350px
          height: 303px
+         
+         flex: 0 1 auto
       &__content-wrapper
          padding: 50px 40px
       &__txt
@@ -214,8 +204,7 @@
 
 @media screen and ( max-width: 768px)
    .container
-      max-width: 540px
-      margin: 0 auto
+      max-width: 570px
    
    .header
       &__nav
@@ -256,6 +245,7 @@
             padding: 10px 23px
 
       &__hamburger
+         display: block
          width: 50px
          height: 25px
          z-index: 2
@@ -359,7 +349,7 @@
    .big-sales
       margin-top: 100px
       &__border
-         height: 320px
+         height: 355px
       &__txt-wrapper
          padding: 15px 0 0 20px
       &__header
@@ -368,7 +358,7 @@
       &__sub-header
          font-size: 16px
          max-height: 480px
-         max-width: 510px
+         max-width: 460px
       &__button
          margin-top: 10px
          height: 55px
@@ -437,7 +427,7 @@
 @media screen and ( max-width: 575px)
    .container
       width: 100%
-      margin: 0 auto
+      padding: 0
    
    .header
       &__menu_form
@@ -496,23 +486,31 @@
       &__border
          height: 280px
       &__content-wrapper
-         padding: 39px 30px
+         padding: 39px 45px
       &__txt
          font-size: 21px
    
    .intro-partner
       &__describe
-         max-width: 100%
+         width: 100%
+         max-width: 400px
       h2
          font-size: 20px
+         line-height: 30px
       h3
          font-size: 45px
-         line-height: 52px
+         line-height: 50px
       p
          font-size: 14px
       &__player
-         height: 210px
+         height: 25vh
+         max-height: 238.6px
+         min-height: 238.6px
+         max-width: 400px
+
          border-radius: 25px
+
+         margin: 30px auto
       .round-border
          border-radius: 25px
    
@@ -535,6 +533,9 @@
             padding: 10px 38px 11px 
 
    .AI-website
+      margin-right: auto
+      margin-left: auto
+      max-width: 540px
       &__wrapper
          padding-left: 15px
       &__header
@@ -554,15 +555,21 @@
    
    .big-sales
       &__border
-         height: 400px
+         max-height: 400px
+         max-width: 540px
+         height: 100%
+
+         margin: 0 auto
       &__txt-wrapper
-         padding: 15px 0 0 15px
+         @include px_to_procent(padding, 575, 20, 0, 20, 25)
       &__header
          font-size: 24px
          line-height: 36px
       &__sub-header
          font-size: 14px
-         max-width: 295px
+         max-width: 425px
+         max-height: 180px
+         overflow: hidden
       &__button
          margin-top: 10px
          height: 55px

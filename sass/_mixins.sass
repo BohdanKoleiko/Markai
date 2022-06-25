@@ -2,3 +2,6 @@
    background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
    -webkit-background-clip: text
    -webkit-text-fill-color: transparent
+
+@mixin px_to_procent($parametr, $parent-size, $top, $right, $bottom, $left)
+   #{$parametr}: (($top * 100) / $parent-size) + % (($right * 100) / $parent-size) + % (($bottom * 100) / $parent-size) + % (($left * 100) / $parent-size) + %

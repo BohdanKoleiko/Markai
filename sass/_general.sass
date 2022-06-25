@@ -17,11 +17,7 @@
    &__background-color
       background-color: rgb(15, 11, 48)
    &__bg-gradient
-      background: linear-gradient(90deg, rgba(0, 240, 255, 0.21) 0%, rgba(255, 0, 123, 0.045) 70%)  
-   
-.container
-   max-width: 1391px
-   margin: 0 auto
+      background: linear-gradient(90deg, rgba(0, 240, 255, 0.21) 0%, rgba(255, 0, 123, 0.045) 70%)
 
 body
    background: #0b1030 url(../images/test.jpg) top center/100% no-repeat
@@ -37,7 +33,7 @@ body
          transition: linear, 0.3s
 
 .header
-   margin: 26px 91px 0 91px
+   @include px_to_procent(margin, 1920, 26, 50, 0, 50)
    display: flex
    justify-content: space-between
    align-items: center
@@ -57,12 +53,13 @@ body
       font-weight: 400
       font-size: 20px
       line-height: 30px
-      //margin: 0 33px
       li
          &:nth-child(1n+2)
             margin-left: 15px
       &_form
          display: none
+   &__hamburger
+      display: none
 
    .form
       display: flex
@@ -216,17 +213,14 @@ main
    display: flex
    justify-content: start
    flex-wrap: wrap
+   column-gap: 1.078360891445004%
    &__border
       background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       border-radius: 40px
-      width: 449px
+      flex: 0 1 32.28%
       height: 374px
       margin-top: 22px
       padding: 2px
-      &:nth-child(n+2)
-         margin-left: 22px
-      &:nth-child(3n+4)
-         margin-left: 0
          
    &__item
       background-color: #1F1B42
@@ -235,7 +229,7 @@ main
       height: 100%
       overflow: hidden
    &__content-wrapper
-      padding: 85px 53px 86px 50px
+      @include px_to_procent(padding, 445, 85, 53, 86, 50)
    &__txt
       font-weight: 700
       font-size: 32px
@@ -419,8 +413,6 @@ main
       border-radius: 26.0327px
       overflow: hidden
    &__bg-gradient
-      //height: 303.09px
-      //width: 451.32px
       height: 100%
       width: 100%
       border-radius: 26.0327px
@@ -490,8 +482,6 @@ main
          padding-right: 32px
          font-size: 17px
          color: #fff
-      //&:first-child
-      //   margin-right: 40px
 
    &__feedback
       width: 100%
@@ -518,7 +508,6 @@ main
       margin: 0 auto
       margin-top: 42px
       padding: 3px
-      //background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       input
          width: 100%
          height: 100%
