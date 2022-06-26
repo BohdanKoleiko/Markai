@@ -125,11 +125,13 @@ main
          right: 0
          width: 100%
    &__comming
-      display: block
       position: absolute
       top: 0
       right: 0
-      padding: 16px 135px 16px 55px
+
+      display: block
+      @include px_to_procent(padding, 293, 16, 135, 16, 55)
+      //padding: 16px 135px 16px 55px
       font-weight: 700
       font-size: 27px
       line-height: 41px
@@ -137,11 +139,18 @@ main
       &::after 
          content: ""
          position: absolute
-         top: 26px
+         top: 50%
+         transform: translateY(-50%) scale(1)
          right: 54px
          height: 21px
          width: 60px
          background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
+
+         transition: right 0.3s ease-in, transform 0.3s ease-in
+      &:hover
+         &::after
+            right: 40px
+            transform: translateY(-50%) scale(1.2)
    
 .arrow
    position: relative
@@ -259,12 +268,11 @@ main
          line-height: 30px
    &__player
       position: relative
-      height: 806px
+      padding-top: 57.944%
       width: 100%
       background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       border-radius: 51px
       margin-top: 80px
-      padding: 4px
 
 .round-border
    position: absolute
@@ -354,8 +362,7 @@ main
    margin-top: 240.78px
    &__border
       border-radius: 41px
-      max-height: 626px
-      height: 626px
+      height: 100%
       padding: 5px
    &__bg-color
       border-radius: 36px
@@ -367,8 +374,7 @@ main
       overflow: hidden
    &__txt-wrapper
       margin: 0 auto
-      padding-top: 91px
-      padding-left: 116px
+      @include px_to_procent(padding, 1391, 91, 27, 111.47, 116)
    &__header
       font-weight: 700
       font-size: 70px
@@ -401,7 +407,7 @@ main
       flex-wrap: wrap
       margin-top: 17.77px
    &__border
-      height: 305.77px
+      height: 100%
       padding: 1.34px
       border-radius: 27.3727px
       margin-top: 27.23px
@@ -416,7 +422,7 @@ main
       height: 100%
       width: 100%
       border-radius: 26.0327px
-      padding: 48.07px 45.4px 39.39px 45.4px
+      @include px_to_procent(padding, 451.31, 48.07, 45.4, 39.39, 45.4)
    &__txt
       font-weight: 400
       font-size: 16.0231px
@@ -576,7 +582,9 @@ main
          &::after 
             content: ""
             position: absolute
-            top: 22.5px
+            //top: 22.5px
+            top: 50%
+            transform: translateY(-50%)
             right: 55px
             height: 21px
             width: 60px

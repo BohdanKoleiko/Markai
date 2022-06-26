@@ -16,10 +16,6 @@
          flex: 0 1 46.771%
          &:nth-child(n+2)
             margin-left: 0
-   
-   .intro-partner
-      &__player
-         height: 550px
 
    .custm-inface
       &__img-wrapper
@@ -50,11 +46,6 @@
          line-height: 28px
    
    .big-sales
-      &__border
-         height: 550px
-      &__txt-wrapper
-         padding-top: 40px
-         padding-left: 65px
       &__header
          font-size: 55px
          line-height: 100px
@@ -131,8 +122,6 @@
             font-size: 30px
          h3
             font-size: 50px
-      &__player
-         height: 450px
       
    .custm-inface
       &__img-wrapper
@@ -160,11 +149,6 @@
    
    .big-sales
       margin-top: 200px
-      &__border
-         height: 450px
-      &__txt-wrapper
-         padding-top: 25px
-         padding-left: 40px
       &__header
          font-size: 40px
          line-height: 80px
@@ -178,7 +162,7 @@
       &__header
          font-size: 55px
       &__border
-         height: 290px
+         //height: 290px
          width: 350px
       &__bg-gradient
          padding: 20px 25px
@@ -203,6 +187,12 @@
       width: 360px
 
 @media screen and ( max-width: 768px)
+   body
+      a
+         &:hover
+            background-color: none
+            -webkit-text-fill-color: unset
+
    .container
       max-width: 570px
    
@@ -245,21 +235,23 @@
             padding: 10px 23px
 
       &__hamburger
+         position: absolute
+         right: 17px
+         z-index: 1
+
          display: block
-         width: 50px
+         width: 40px
          height: 25px
-         z-index: 2
          span
             display: block
             width: 100%
-            height: 3px
+            height: 2px
             background-color: #fff
             transition: all 0.4s
             &:nth-child(2)
                margin: 8px 0
          &_active
             position: fixed
-            right: 16px
             span
                &:nth-child(1)
                   transform: translateY(10px) rotate(-135deg)
@@ -277,8 +269,19 @@
          line-height: 110px
       &__text
          line-height: 28px
-      &__button
-         z-index: -1
+      &__comming
+
+      .nohover
+         &::after 
+            content: ""
+            position: absolute
+            top: 50%
+            transform: translateY(-50%) scale(1)
+            right: 54px
+            height: 21px
+            width: 60px
+            background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
+
    .arrow
       margin-top: 110px
    
@@ -317,7 +320,6 @@
             font-size: 16px
       &__player
          margin-top: 30px
-         height: 320px
    
    .custm-inface
       margin-top: 100px
@@ -348,10 +350,6 @@
 
    .big-sales
       margin-top: 100px
-      &__border
-         height: 355px
-      &__txt-wrapper
-         padding: 15px 0 0 20px
       &__header
          font-size: 29px
          line-height: 49px
@@ -434,10 +432,6 @@
          font-size: 24px
       .form__button
          padding: 10px 25px
-      &__hamburger
-         width: 35px
-         span
-            height: 2px
    
    main
       margin-top: 80px
@@ -459,7 +453,6 @@
          padding: 10px 110px 10px 48px
          font-size: 24px
          &::after
-            top: 21px
             right: 30px
       .arrow
          margin-top: 70px
@@ -503,18 +496,18 @@
       p
          font-size: 14px
       &__player
-         height: 25vh
-         max-height: 238.6px
-         min-height: 238.6px
-         max-width: 400px
+         max-width: 540px
 
-         border-radius: 25px
+         border-radius: 40px
 
          margin: 30px auto
       .round-border
-         border-radius: 25px
+         border-radius: 40px
    
    .custm-inface
+      margin-right: auto
+      margin-left: auto
+      max-width: 540px
       &__wrapper
          padding-left: 15px
       &__header
@@ -526,11 +519,11 @@
          font-size: 14px
       &__button
          margin-top: 21px
-         width: 250px
-         height: 62px
+         width: 230px
+         height: 60px
          a
-            font-size: 24px
-            padding: 10px 38px 11px 
+            font-size: 22px
+            padding: 9px 38px 9px
 
    .AI-website
       margin-right: auto
@@ -547,21 +540,19 @@
          font-size: 14px
       &__button
          margin-top: 21px
-         width: 250px
-         height: 62px
+         width: 230px
+         height: 60px
          a
-            font-size: 24px
-            padding: 10px 38px 11px
+            font-size: 22px
+            padding: 9px 38px 9px
    
    .big-sales
       &__border
-         max-height: 400px
+         max-height: 420px
          max-width: 540px
          height: 100%
 
          margin: 0 auto
-      &__txt-wrapper
-         @include px_to_procent(padding, 575, 20, 0, 20, 25)
       &__header
          font-size: 24px
          line-height: 36px
@@ -580,9 +571,9 @@
          font-size: 38px
          line-height: 52px
       &__row
-         margin-top: 0
+         margin: 0 auto
+         max-width: 350px
       &__border
-         height: 265px
          width: 100%
       &__bg-gradient
          padding: 15px 15px
@@ -593,7 +584,7 @@
    
    .contact-form
       &__wrapper
-         width: 100%
+         max-width: 450px
       &__header
          font-size: 48px
          line-height: 75px
@@ -607,3 +598,13 @@
          width: 238px
          height: 58px
          margin-top: 25px
+   
+   .footer
+      height: 985px
+   
+   .markai
+      &__social
+         a:nth-child(1n+2)
+            margin-left: 10px
+      //&__bg-color
+      //   a::after
