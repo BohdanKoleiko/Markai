@@ -186,13 +186,20 @@
       margin-top: 65px
       width: 360px
 
-@media screen and ( max-width: 768px)
+@media (hover:none)
+   .main-header
+      &__comming
+         &:hover
+            &::after
+               right: 16%
+               transform: translateY(-50%) scale(1)
    body
       a
          &:hover
             background-color: none
             -webkit-text-fill-color: unset
 
+@media screen and ( max-width: 768px)
    .container
       max-width: 570px
    
@@ -272,18 +279,6 @@
          line-height: 110px
       &__text
          line-height: 28px
-      &__comming
-
-      .nohover
-         &::after 
-            content: ""
-            position: absolute
-            top: 50%
-            transform: translateY(-50%) scale(1)
-            //right: 54px
-            height: 21px
-            width: 60px
-            background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
 
    .arrow
       margin-top: 110px
@@ -428,7 +423,6 @@
 @media screen and ( max-width: 575px)
    .container
       width: 100%
-      padding: 0
    
    .header
       &__menu_form
@@ -455,8 +449,8 @@
       &__comming
          padding: 10px 110px 10px 48px
          font-size: 24px
-         &::after
-            right: 30px
+         //&::after
+         //   right: 30px
       .arrow
          margin-top: 70px
    
@@ -465,7 +459,7 @@
       background-position: center top
       max-height: 371px
       &__text
-         font-size: 27px
+         font-size: 26px
          max-width: 100%
          margin-top: 218px
          text-align: center
