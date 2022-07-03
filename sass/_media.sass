@@ -1,7 +1,13 @@
 @media screen and ( max-width: 1199px)
    .container
       max-width: 990px
-      
+   
+   .header
+      &__nav
+         max-width: 480px
+      &__menu
+         font-size: 18px
+
    .main-AI
       background-size: 37%
       max-height: 408px
@@ -47,8 +53,8 @@
    
    .big-sales
       &__header
-         font-size: 55px
-         line-height: 100px
+         font-size: 50px
+         line-height: 90px
       &__sub-header
          max-width: 670px
 
@@ -62,20 +68,21 @@
          margin: 0 22px
       &__menu
          font-size: 16px
+         justify-content: center
          li:nth-child(1n+2)
             margin-left: 10px
       
       .form
-         width: 190px
-
-         font-size: 18px
-         line-height: 28px
+         max-width: 156px
+         font-size: 16px
+         line-height: 25px
          &__login
-            margin-right: 14px
+            margin-right: 10px
          &__button-wrapper
             width: 116px
+            height: 33px
          &__button
-            padding: 5px 19px
+            padding: 4px 17px
    
    main
       margin-top: 110px
@@ -109,10 +116,7 @@
       &__border
          width: 350px
          height: 303px
-         
          flex: 0 1 auto
-      &__content-wrapper
-         padding: 50px 40px
       &__txt
          font-size: 24px
    
@@ -150,8 +154,8 @@
    .big-sales
       margin-top: 200px
       &__header
-         font-size: 40px
-         line-height: 80px
+         font-size: 37px
+         line-height: 70px
       &__sub-header
          font-size: 18px
          max-width: 580px
@@ -162,7 +166,6 @@
       &__header
          font-size: 55px
       &__border
-         //height: 290px
          width: 350px
       &__bg-gradient
          padding: 20px 25px
@@ -186,20 +189,20 @@
       margin-top: 65px
       width: 360px
 
-@media (hover:none)
-   .main-header
-      &__comming
-         &:hover
-            &::after
-               right: 16%
-               transform: translateY(-50%) scale(1)
-   body
-      a
-         &:hover
-            background-color: none
-            -webkit-text-fill-color: unset
-
 @media screen and ( max-width: 768px)
+   @media (hover:none) and (pointer: coarse)
+      .main-header
+         &__comming
+            &:hover
+               &::after
+                  right: 16%
+                  transform: translateY(-50%) scale(1)
+      body
+         a
+            &:hover
+               background-color: none
+               -webkit-text-fill-color: unset
+
    .container
       max-width: 570px
    
@@ -349,7 +352,7 @@
    .big-sales
       margin-top: 100px
       &__header
-         font-size: 29px
+         font-size: 28px
          line-height: 49px
       &__sub-header
          font-size: 16px
@@ -449,8 +452,6 @@
       &__comming
          padding: 10px 110px 10px 48px
          font-size: 24px
-         //&::after
-         //   right: 30px
       .arrow
          margin-top: 70px
    
@@ -475,10 +476,9 @@
    .box
       &__border
          height: 280px
-      &__content-wrapper
-         padding: 39px 45px
       &__txt
-         font-size: 21px
+         font-size: 20px
+         line-height: 32px
    
    .intro-partner
       &__describe
@@ -488,7 +488,7 @@
          font-size: 20px
          line-height: 30px
       h3
-         font-size: 45px
+         font-size: 44px
          line-height: 50px
       p
          font-size: 14px
@@ -545,18 +545,18 @@
    
    .big-sales
       &__border
-         max-height: 420px
+         //max-height: 420px
          max-width: 540px
          height: 100%
-
          margin: 0 auto
       &__header
-         font-size: 24px
+         font-size: 23px
          line-height: 36px
       &__sub-header
          font-size: 14px
+         line-height: 24px
          max-width: 425px
-         max-height: 180px
+         max-height: 192px
          overflow: hidden
       &__button
          margin-top: 10px
@@ -565,7 +565,8 @@
    
    .reviews
       &__header
-         font-size: 38px
+         max-width: 290px
+         font-size: 36px
          line-height: 52px
       &__row
          margin: 0 auto
