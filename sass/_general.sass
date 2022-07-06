@@ -3,6 +3,7 @@
    height: 72px
    width: 293px
    border-radius: 50px
+   background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
    a
       display: block
       font-weight: 700
@@ -35,18 +36,20 @@ body
          @include gradient
          transition: linear, 0.3s
 
-header
+.header
    margin: 26px 91px 0 91px
    display: flex
-   flex-wrap: wrap
    justify-content: space-between
    align-items: center
    min-height: 46px
-   #header__brand-name
+   &__brand-name
       font-weight: 700
       font-size: 31px
       line-height: 46px
-   #header__list
+   &__nav
+      width: 640px
+      margin: 0 33px
+   &__menu
       display: flex
       justify-content: space-between
       flex-wrap: wrap
@@ -54,12 +57,14 @@ header
       font-weight: 400
       font-size: 20px
       line-height: 30px
-      margin: 0 33px
+      //margin: 0 33px
       li
          &:nth-child(1n+2)
-            margin-left: 54px
+            margin-left: 15px
+      &_form
+         display: none
 
-   #form
+   .form
       display: flex
       justify-content: space-between
       align-items: center
@@ -67,14 +72,16 @@ header
       font-weight: 700
       font-size: 20px
       line-height: 30px
-      &__button
+      &__login
+         margin-right: 26px
+      &__button-wrapper
          position: relative
          background: url(../images/buttons/1.svg) center center / contain no-repeat
          height: 42px
          width: 130px
          a
             display: block
-      &__sign-up
+      &__button
          position: absolute
          padding: 6px 22px
          border-radius: 50px
@@ -82,7 +89,7 @@ header
 main
    margin-top: 145px
 
-#main-header
+.main-header
    text-align: center
    &__wrapper
       max-width: 880px
@@ -145,28 +152,42 @@ main
    width: 56px
    margin: 0 auto
    margin-top: 126px
-   &::before
-      content: ""
-      position: absolute
-      width: 3px
-      height: 33px
-      background-color: #fff
-      transform: rotate(-55deg)
-      left: 25%
-   &::after
-      content: ""
-      position: absolute
-      width: 3px
-      height: 33px
-      background-color: #fff
-      transform: rotate(55deg)
-      right: 25%
+   a
+      display: block
+      height: 27px
+      width: 56px
+      &::before
+         content: ""
+         position: absolute
+         width: 3px
+         height: 33px
+         background-color: #fff
+         transform: rotate(-55deg)
+         left: 24.5%
+         transition: all 0.4s ease-out
+      &::after
+         content: ""
+         position: absolute
+         width: 3px
+         height: 33px
+         background-color: #fff
+         transform: rotate(55deg)
+         right: 24.5%
+         transition: all 0.4s ease-out
+      &:hover
+         &::before
+            height: 28px
+            left: 28%
+         &::after
+            height: 28px
+            right: 28%
+
    
-#main__AI
+.main-AI
    margin-top: 150px
    height: 551.69px
-   background: url(../images/AI_robot.png) center left / contain no-repeat
-   &_text
+   background: url(../images/AI_robot.png) left / contain no-repeat
+   &__text
       font-weight: 700
       font-size: 60px
       line-height: 90px
@@ -175,7 +196,7 @@ main
       float: right
       margin-top: 141px
    
-#features
+.features
    margin-top: 150px
    &__header
       font-weight: 700
@@ -193,12 +214,13 @@ main
 
 .box
    display: flex
-   justify-content: stretch
+   justify-content: start
    flex-wrap: wrap
    &__border
       background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       border-radius: 40px
-      max-width: 449px
+      width: 449px
+      height: 374px
       margin-top: 22px
       padding: 2px
       &:nth-child(n+2)
@@ -209,6 +231,9 @@ main
    &__item
       background-color: #1F1B42
       border-radius: 40px
+      width: 100%
+      height: 100%
+      overflow: hidden
    &__content-wrapper
       padding: 85px 53px 86px 50px
    &__txt
@@ -217,7 +242,7 @@ main
       line-height: 48px
       max-width: 342px
 
-#intro-partner
+.intro-partner
    margin-top: 150px
    text-align: center
    &__describe
@@ -266,7 +291,7 @@ main
       transform: translateX(-50%) translateY(-50%)
       object-fit: cover
    
-#custm-inface
+.custm-inface
    margin-top: 150px
    &__wrapper
       border-left: 3px solid #fff
@@ -289,11 +314,13 @@ main
       float: right
       max-width: 598.85px
       max-height: 362.94px
+      img
+         width: 100%
    &__button
       margin-top: 21px
       background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat
 
-#AI-website
+.AI-website
    margin-top: 140px
    padding-top: 81px
    &__wrapper
@@ -314,45 +341,40 @@ main
       font-size: 20px
       line-height: 30px
    &__img-wrapper
+      position: relative
       float: left
       width: 598.85px
       height: 363px
       overflow: hidden
-   &__img-item
-      position: relative
-      height: 100%
       img
          position: absolute
-         top: -80px
+         width: 100%
+         height: 100%
+         top: -40px
          left: 0
    &__button
       margin-top: 21px
       background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat
 
-#big-sales
+.big-sales
    margin-top: 240.78px
    &__border
-      position: relative
       border-radius: 41px
       max-height: 626px
+      height: 626px
       padding: 5px
-      overflow: hidden
    &__bg-color
       border-radius: 36px
-      padding-top: 616px
+      height: 100%
    &__bg-gradient
-      position: absolute
-      top: 0
-      left: 0
       height: 100%
       width: 100%
       border-radius: 36px
+      overflow: hidden
    &__txt-wrapper
-      position: absolute
-      top: 91px
-      left: 116px
-      margin-top: 91px
       margin: 0 auto
+      padding-top: 91px
+      padding-left: 116px
    &__header
       font-weight: 700
       font-size: 70px
@@ -363,11 +385,13 @@ main
       font-size: 20px
       line-height: 30px
       max-width: 889px
+      max-height: 120px
+      overflow: hidden
    &__button
       margin-top: 43px
       background: url(../images/buttons/Rectangle-293x72.png) center center/contain no-repeat    
 
-#reviews
+.reviews
    margin-top: 150px
    &__header
       max-width: 608px
@@ -388,12 +412,17 @@ main
       border-radius: 27.3727px
       margin-top: 27.23px
    &__bg-color
-      height: 303.09px
-      width: 451.32px
+      max-height: 303.09px
+      max-width: 451.32px
+      height: 100%
+      width: 100%
       border-radius: 26.0327px
+      overflow: hidden
    &__bg-gradient
-      height: 303.09px
-      width: 451.32px
+      //height: 303.09px
+      //width: 451.32px
+      height: 100%
+      width: 100%
       border-radius: 26.0327px
       padding: 48.07px 45.4px 39.39px 45.4px
    &__txt
@@ -416,7 +445,7 @@ main
             font-size: 21.3641px
             line-height: 32px
 
-#contact-form
+.contact-form
    margin-top: 150px
    &__wrapper
       width: 80.7%
@@ -438,8 +467,12 @@ main
       text-align: center
    form
       margin-top: 55px
+   
+   &__personal-data-wrapper
+      display: flex
+      justify-content: space-between
 
-   .personal-data
+   &__personal-data
       display: inline-block
       border-radius: 50px
       width: 48%
@@ -454,12 +487,13 @@ main
          border: none
          border-radius: 50px
          padding-left: 44.7px
+         padding-right: 32px
          font-size: 17px
          color: #fff
-      &:first-child
-         margin-right: 40px
+      //&:first-child
+      //   margin-right: 40px
 
-   .feedback
+   &__feedback
       width: 100%
       height: 232px
       border-radius: 30px
@@ -478,13 +512,13 @@ main
          font-size: 17px
          color: #fff
 
-   .button
+   &__button
       width: 293px
       height: 72px
       margin: 0 auto
       margin-top: 42px
       padding: 3px
-      background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
+      //background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       input
          width: 100%
          height: 100%
@@ -496,14 +530,34 @@ main
          font-size: 27px
    
 
-footer
+.footer
    height: 848px
-   background-color: rgba(255, 255, 255, 0.05)
+   background-color: #1b1738
    margin-top: 150px
-#row
-   display: flex
-   justify-content: space-between
-#markai
+   &__row
+      display: flex
+      justify-content: space-between
+   &__nav
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      flex-wrap: wrap
+      width: 412px
+      margin-top: 192px
+      &_list-item
+         width: 185px
+         list-style: none
+         font-weight: 400
+         font-size: 20px
+         line-height: 30px
+         &:nth-child(1n+3)
+            margin-top: 44px
+         li:first-child
+            font-weight: 700
+         li:nth-child(1n+2)
+            margin-top: 10px
+
+.markai
    width: 504px
    margin-top: 211px
    &__header
@@ -517,19 +571,15 @@ footer
       font-size: 20px
       line-height: 30px
    &__button
-      margin-top: 25px
-   &__border
       width: 293px
       height: 72px
       border-radius: 50px
       padding: 3px
+      margin-top: 25px
+      overflow: hidden
    &__bg-color
-      background-color: #0F0B30
+      background-color: #1b1738
       border-radius: 47px
-      width: 287px
-      height: 66px
-   &__button-txt
-      background-color: rgba(255, 255, 255, 0.05)
       width: 287px
       height: 66px
       a
@@ -546,23 +596,3 @@ footer
       margin-top: 34px
       a:nth-child(1n+2)
          margin-left: 21px
-#nav
-   display: flex
-   justify-content: space-between
-   align-content: flex-start
-   align-items: flex-start
-   flex-wrap: wrap
-   width: 412px
-   margin-top: 192px
-   &__list-item
-      width: 185px
-      list-style: none
-      font-weight: 400
-      font-size: 20px
-      line-height: 30px
-      &:nth-child(1n+3)
-         margin-top: 44px
-      li:first-child
-         font-weight: 700
-      li:nth-child(1n+2)
-         margin-top: 10px
