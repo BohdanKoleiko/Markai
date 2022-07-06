@@ -17,11 +17,7 @@
    &__background-color
       background-color: rgb(15, 11, 48)
    &__bg-gradient
-      background: linear-gradient(90deg, rgba(0, 240, 255, 0.21) 0%, rgba(255, 0, 123, 0.045) 70%)  
-   
-.container
-   max-width: 1391px
-   margin: 0 auto
+      background: linear-gradient(90deg, rgba(0, 240, 255, 0.21) 0%, rgba(255, 0, 123, 0.045) 70%)
 
 body
    background: #0b1030 url(../images/test.jpg) top center/100% no-repeat
@@ -37,18 +33,19 @@ body
          transition: linear, 0.3s
 
 .header
-   margin: 26px 91px 0 91px
+   @include px_to_procent(margin, 1920, 26, 50, 0, 50)
    display: flex
    justify-content: space-between
    align-items: center
    min-height: 46px
+   position: relative
    &__brand-name
+      position: absolute
       font-weight: 700
       font-size: 31px
       line-height: 46px
    &__nav
       width: 640px
-      margin: 0 33px
    &__menu
       display: flex
       justify-content: space-between
@@ -57,12 +54,13 @@ body
       font-weight: 400
       font-size: 20px
       line-height: 30px
-      //margin: 0 33px
       li
          &:nth-child(1n+2)
             margin-left: 15px
       &_form
          display: none
+   &__hamburger
+      display: none
 
    .form
       display: flex
@@ -72,6 +70,8 @@ body
       font-weight: 700
       font-size: 20px
       line-height: 30px
+      position: absolute
+      right: 0
       &__login
          margin-right: 26px
       &__button-wrapper
@@ -128,11 +128,12 @@ main
          right: 0
          width: 100%
    &__comming
-      display: block
       position: absolute
       top: 0
       right: 0
-      padding: 16px 135px 16px 55px
+
+      display: block
+      @include px_to_procent(padding, 293, 16, 135, 16, 55)
       font-weight: 700
       font-size: 27px
       line-height: 41px
@@ -140,11 +141,18 @@ main
       &::after 
          content: ""
          position: absolute
-         top: 26px
-         right: 54px
+         top: 50%
+         transform: translateY(-50%) scale(1)
+         right: 16%
          height: 21px
          width: 60px
          background: url(../images/buttons/Arrow.svg) center center / contain no-repeat
+
+         transition: right 0.3s ease-in, transform 0.3s ease-in
+      &:hover
+         &::after
+            right: 40px
+            transform: translateY(-50%) scale(1.2)
    
 .arrow
    position: relative
@@ -216,17 +224,14 @@ main
    display: flex
    justify-content: start
    flex-wrap: wrap
+   column-gap: 1.078360891445004%
    &__border
       background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       border-radius: 40px
-      width: 449px
+      flex: 0 1 32.28%
       height: 374px
       margin-top: 22px
       padding: 2px
-      &:nth-child(n+2)
-         margin-left: 22px
-      &:nth-child(3n+4)
-         margin-left: 0
          
    &__item
       background-color: #1F1B42
@@ -235,12 +240,13 @@ main
       height: 100%
       overflow: hidden
    &__content-wrapper
-      padding: 85px 53px 86px 50px
+      @include px_to_procent(padding, 445, 81, 53, 81, 50)
    &__txt
       font-weight: 700
       font-size: 32px
       line-height: 48px
       max-width: 342px
+      @include px_to_procent(margin, 445, 13, 0, 0, 0)
 
 .intro-partner
    margin-top: 150px
@@ -265,12 +271,11 @@ main
          line-height: 30px
    &__player
       position: relative
-      height: 806px
+      padding-top: 57.944%
       width: 100%
       background-image: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       border-radius: 51px
       margin-top: 80px
-      padding: 4px
 
 .round-border
    position: absolute
@@ -360,8 +365,7 @@ main
    margin-top: 240.78px
    &__border
       border-radius: 41px
-      max-height: 626px
-      height: 626px
+      height: 100%
       padding: 5px
    &__bg-color
       border-radius: 36px
@@ -373,8 +377,7 @@ main
       overflow: hidden
    &__txt-wrapper
       margin: 0 auto
-      padding-top: 91px
-      padding-left: 116px
+      @include px_to_procent(padding, 1391, 91, 116, 90, 116)
    &__header
       font-weight: 700
       font-size: 70px
@@ -407,7 +410,7 @@ main
       flex-wrap: wrap
       margin-top: 17.77px
    &__border
-      height: 305.77px
+      height: 100%
       padding: 1.34px
       border-radius: 27.3727px
       margin-top: 27.23px
@@ -419,12 +422,10 @@ main
       border-radius: 26.0327px
       overflow: hidden
    &__bg-gradient
-      //height: 303.09px
-      //width: 451.32px
       height: 100%
       width: 100%
       border-radius: 26.0327px
-      padding: 48.07px 45.4px 39.39px 45.4px
+      @include px_to_procent(padding, 451.31, 48.07, 45.4, 39.39, 45.4)
    &__txt
       font-weight: 400
       font-size: 16.0231px
@@ -490,8 +491,6 @@ main
          padding-right: 32px
          font-size: 17px
          color: #fff
-      //&:first-child
-      //   margin-right: 40px
 
    &__feedback
       width: 100%
@@ -518,7 +517,6 @@ main
       margin: 0 auto
       margin-top: 42px
       padding: 3px
-      //background: linear-gradient(90deg, #00F0FF 0%, #5773FF 46.87%, #FF007A 100%)
       input
          width: 100%
          height: 100%
@@ -587,7 +585,9 @@ main
          &::after 
             content: ""
             position: absolute
-            top: 22.5px
+            //top: 22.5px
+            top: 50%
+            transform: translateY(-50%)
             right: 55px
             height: 21px
             width: 60px

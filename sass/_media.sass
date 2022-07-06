@@ -1,21 +1,13 @@
-@media screen and ( max-width: 1200px)
+@media screen and ( max-width: 1199px)
    .container
-      max-width: 960px
-      margin: 0 auto
-
-   .header
-      margin: 26px 16px 0 16px
-      &__menu
-         font-size: 16px
-         line-height: 26px
+      max-width: 990px
    
-      .form
+   .header
+      &__nav
+         max-width: 480px
+      &__menu
          font-size: 18px
-         line-height: 28px
-         &__button-wrapper
-            height: 40px
-            width: 121px
-      
+
    .main-AI
       background-size: 37%
       max-height: 408px
@@ -27,12 +19,9 @@
    .box
       justify-content: space-between
       &__border
+         flex: 0 1 46.771%
          &:nth-child(n+2)
             margin-left: 0
-   
-   .intro-partner
-      &__player
-         height: 550px
 
    .custm-inface
       &__img-wrapper
@@ -63,40 +52,37 @@
          line-height: 28px
    
    .big-sales
-      &__border
-         height: 550px
-      &__txt-wrapper
-         padding-top: 40px
-         padding-left: 65px
       &__header
-         font-size: 55px
-         line-height: 100px
+         font-size: 50px
+         line-height: 90px
       &__sub-header
          max-width: 670px
-         //max-height: 120px
 
 @media screen and ( max-width: 1024px)
    .container
-      max-width: 720px
-      margin: 0 auto
+      max-width: 750px
    
    .header
-      margin: 26px 16px 0 16px
       &__nav
-         width: 460px
+         max-width: 500px
          margin: 0 22px
       &__menu
+         font-size: 16px
+         justify-content: center
          li:nth-child(1n+2)
             margin-left: 10px
       
       .form
-         width: 179px
+         max-width: 156px
+         font-size: 16px
+         line-height: 25px
          &__login
-            margin-right: 14px
+            margin-right: 10px
          &__button-wrapper
             width: 116px
+            height: 33px
          &__button
-            padding: 6px 20px
+            padding: 4px 17px
    
    main
       margin-top: 110px
@@ -130,8 +116,7 @@
       &__border
          width: 350px
          height: 303px
-      &__content-wrapper
-         padding: 50px 40px
+         flex: 0 1 auto
       &__txt
          font-size: 24px
    
@@ -141,8 +126,6 @@
             font-size: 30px
          h3
             font-size: 50px
-      &__player
-         height: 450px
       
    .custm-inface
       &__img-wrapper
@@ -170,14 +153,9 @@
    
    .big-sales
       margin-top: 200px
-      &__border
-         height: 450px
-      &__txt-wrapper
-         padding-top: 25px
-         padding-left: 40px
       &__header
-         font-size: 40px
-         line-height: 80px
+         font-size: 37px
+         line-height: 70px
       &__sub-header
          font-size: 18px
          max-width: 580px
@@ -188,7 +166,6 @@
       &__header
          font-size: 55px
       &__border
-         height: 290px
          width: 350px
       &__bg-gradient
          padding: 20px 25px
@@ -213,9 +190,21 @@
       width: 360px
 
 @media screen and ( max-width: 768px)
+   @media (hover:none) and (pointer: coarse)
+      .main-header
+         &__comming
+            &:hover
+               &::after
+                  right: 16%
+                  transform: translateY(-50%) scale(1)
+      body
+         a
+            &:hover
+               background-color: none
+               -webkit-text-fill-color: unset
+
    .container
-      max-width: 540px
-      margin: 0 auto
+      max-width: 570px
    
    .header
       &__nav
@@ -230,6 +219,7 @@
          margin: 0
          &_active
             right: 0
+            overflow: scroll
       &__menu
          flex-direction: column
          align-items: center
@@ -242,10 +232,12 @@
             display: flex
             justify-content: center
             align-items: center
+
             font-weight: 700
             font-size: 26px
             line-height: 30px
-            margin-top: 40px
+
+            margin: 40px 0 25px 0
 
       .form
          display: none
@@ -256,20 +248,23 @@
             padding: 10px 23px
 
       &__hamburger
-         width: 50px
+         position: absolute
+         right: 17px
+         z-index: 1
+
+         display: block
+         width: 40px
          height: 25px
-         z-index: 2
          span
             display: block
             width: 100%
-            height: 3px
+            height: 2px
             background-color: #fff
             transition: all 0.4s
             &:nth-child(2)
                margin: 8px 0
          &_active
             position: fixed
-            right: 16px
             span
                &:nth-child(1)
                   transform: translateY(10px) rotate(-135deg)
@@ -287,8 +282,7 @@
          line-height: 110px
       &__text
          line-height: 28px
-      &__button
-         z-index: -1
+
    .arrow
       margin-top: 110px
    
@@ -327,7 +321,6 @@
             font-size: 16px
       &__player
          margin-top: 30px
-         height: 320px
    
    .custm-inface
       margin-top: 100px
@@ -358,17 +351,13 @@
 
    .big-sales
       margin-top: 100px
-      &__border
-         height: 320px
-      &__txt-wrapper
-         padding: 15px 0 0 20px
       &__header
-         font-size: 29px
+         font-size: 28px
          line-height: 49px
       &__sub-header
          font-size: 16px
          max-height: 480px
-         max-width: 510px
+         max-width: 460px
       &__button
          margin-top: 10px
          height: 55px
@@ -437,17 +426,12 @@
 @media screen and ( max-width: 575px)
    .container
       width: 100%
-      margin: 0 auto
    
    .header
       &__menu_form
          font-size: 24px
       .form__button
          padding: 10px 25px
-      &__hamburger
-         width: 35px
-         span
-            height: 2px
    
    main
       margin-top: 80px
@@ -457,7 +441,7 @@
          font-size: 24px
          line-height: 45px
       &__sub-title
-         font-size: 50px
+         font-size: 49px
          line-height: 59px
       &__text
          font-size: 14px
@@ -468,9 +452,6 @@
       &__comming
          padding: 10px 110px 10px 48px
          font-size: 24px
-         &::after
-            top: 21px
-            right: 30px
       .arrow
          margin-top: 70px
    
@@ -479,7 +460,7 @@
       background-position: center top
       max-height: 371px
       &__text
-         font-size: 27px
+         font-size: 26px
          max-width: 100%
          margin-top: 218px
          text-align: center
@@ -495,28 +476,35 @@
    .box
       &__border
          height: 280px
-      &__content-wrapper
-         padding: 39px 30px
       &__txt
-         font-size: 21px
+         font-size: 20px
+         line-height: 32px
    
    .intro-partner
       &__describe
-         max-width: 100%
+         width: 100%
+         max-width: 400px
       h2
          font-size: 20px
+         line-height: 30px
       h3
-         font-size: 45px
-         line-height: 52px
+         font-size: 44px
+         line-height: 50px
       p
          font-size: 14px
       &__player
-         height: 210px
-         border-radius: 25px
+         max-width: 540px
+
+         border-radius: 40px
+
+         margin: 30px auto
       .round-border
-         border-radius: 25px
+         border-radius: 40px
    
    .custm-inface
+      margin-right: auto
+      margin-left: auto
+      max-width: 540px
       &__wrapper
          padding-left: 15px
       &__header
@@ -528,13 +516,16 @@
          font-size: 14px
       &__button
          margin-top: 21px
-         width: 250px
-         height: 62px
+         width: 230px
+         height: 60px
          a
-            font-size: 24px
-            padding: 10px 38px 11px 
+            font-size: 22px
+            padding: 9px 38px 9px
 
    .AI-website
+      margin-right: auto
+      margin-left: auto
+      max-width: 540px
       &__wrapper
          padding-left: 15px
       &__header
@@ -546,23 +537,27 @@
          font-size: 14px
       &__button
          margin-top: 21px
-         width: 250px
-         height: 62px
+         width: 230px
+         height: 60px
          a
-            font-size: 24px
-            padding: 10px 38px 11px
+            font-size: 22px
+            padding: 9px 38px 9px
    
    .big-sales
       &__border
-         height: 400px
-      &__txt-wrapper
-         padding: 15px 0 0 15px
+         //max-height: 420px
+         max-width: 540px
+         height: 100%
+         margin: 0 auto
       &__header
-         font-size: 24px
+         font-size: 23px
          line-height: 36px
       &__sub-header
          font-size: 14px
-         max-width: 295px
+         line-height: 24px
+         max-width: 425px
+         max-height: 192px
+         overflow: hidden
       &__button
          margin-top: 10px
          height: 55px
@@ -570,12 +565,13 @@
    
    .reviews
       &__header
-         font-size: 38px
+         max-width: 290px
+         font-size: 36px
          line-height: 52px
       &__row
-         margin-top: 0
+         margin: 0 auto
+         max-width: 350px
       &__border
-         height: 265px
          width: 100%
       &__bg-gradient
          padding: 15px 15px
@@ -586,7 +582,7 @@
    
    .contact-form
       &__wrapper
-         width: 100%
+         max-width: 450px
       &__header
          font-size: 48px
          line-height: 75px
@@ -600,3 +596,11 @@
          width: 238px
          height: 58px
          margin-top: 25px
+   
+   .footer
+      height: 985px
+   
+   .markai
+      &__social
+         a:nth-child(1n+2)
+            margin-left: 10px
